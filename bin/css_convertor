@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'css_convertor'
+
+case ARGV.size
+  when 1 then CssConvertor.convert(ARGV[0])
+  else puts CssConvertor.style("Usage:\n  $ css_convertor file.css", :color=>:cyan); exit
+end
