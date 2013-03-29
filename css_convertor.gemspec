@@ -7,7 +7,6 @@ Gem::Specification.new do |gem|
   gem.description   = %q{css_convertor flips the layout of your CSS file. You can use it if you're designing a website that supports both LTR and RTL languages: css_convertor will create a seperate CSS file of the new layout.}
   gem.summary       = %q{CSS LTR-RTL layout converter}
   gem.homepage      = "http://rubygems.org/gems/css_convertor"
-  gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
