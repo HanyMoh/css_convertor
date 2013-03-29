@@ -59,7 +59,6 @@ module CssConvertor
       str.gsub(/([a-z\-]+)\s*:\s*(.+?)(?=\s*[;}])/) {"#{property($1)}:#{value($1, $2)}"}
     end
     def property(property_name)
-      puts property_name
       PROPERTY_MAP[property_name] || property_name
     end
     def value(property_name, property_value)
